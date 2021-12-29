@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.name {
+    margin: 0;
+    font-size: 40px;
+    color: black;
+    display: block;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .move-up {
+    -webkit-animation: mover 1.5s ease-out;
+    animation: mover 0.5s ease-out linear;
+}
+
+.move-up-linear {
+    -webkit-animation: mover 1.5s linear;
+    animation: mover 0.5s ease-out linear;
+    
+} */
+
+.nav-menu {
+    position: relative;
+    top: 30%;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+}
+
+.nav-menu ul li {
+    padding-bottom: 5px;
+}
+
+.background-images {
+    margin: 0;
+    /* display: black; */
+    position: absolute;
+    height: 108%;
+    width: 100%;
+    
+    /* background-color: black; */
+}
+
+.background-images img {
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    height: 100%;
+}
+
+#upper {
+    transform-origin: 2080px 870px;
+}
+
+/* #phone-hand {
+    transform-origin: 1628px 518px;
+} */
+
+@-webkit-keyframes mover-bounce {
+    0% { transform: translateY(100%); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes mover-bounce {
+    0% { transform: translateY(100%); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0); }
+}
+
+@-webkit-keyframes twirl {
+    0% { transform: translateY(100%) rotate(360deg); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes twirl {
+    0% { transform: translateY(100%) rotate(360deg); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@-webkit-keyframes mover-tilt {
+    0% { transform: translateY(100%) rotate(-75deg);}
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+@keyframes mover-tilt {
+    0% { transform: translateY(100%) rotate(-75deg);}
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+@-webkit-keyframes mover-tilt-back {
+    0% { transform: translateY(100%) rotate(45deg);  }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+@keyframes mover-tilt-back {
+    0% { transform: translateY(100%) rotate(45deg); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+@-webkit-keyframes mover-tilt-back-slow {
+    0% { transform: translateY(150%) rotate(45deg);  }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+
+@keyframes mover-tilt-back-slow {
+    0% { transform: translateY(145%) rotate(45deg); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+@-webkit-keyframes mover-tilt-back-grow {
+    0% { transform: translateY(100%) scale(0.1, 0.1) rotate(45deg) ;  }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) scale(1, 1) rotate(0) ; }
+}
+
+@keyframes mover-tilt-back-grow {
+    0% { transform: translateY(100%) scale(0.1, 0.1) rotate(45deg) ;  }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0) scale(1, 1) rotate(0) ; }
+}
+@-webkit-keyframes tilt {
+    0% { transform: rotate(-75deg);}
+    100% { transform: rotate(0); }}
+
+@keyframes tilt {
+    0% { transform: rotate(-75deg);}
+    100% { transform: rotate(0); }
+}
+
+@-webkit-keyframes grow {
+    0% {transform: scale(0, 0);}
+    100% {transform: scale(1, 1);}
+ }
+
+@keyframes grow {
+0% {transform: scale(0, 0);}
+100% {transform: scale(1, 1);}
+}
+
+
+.pix {
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 518px;
+    left: 1628px;
+    height: 0.5%;
+    width: 0.5%;
+    background-color: red;
+}
+
