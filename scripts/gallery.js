@@ -22,7 +22,7 @@ export function makeGallery(directory, images) {
         let image = document.createElement('img');
         let link = document.createElement('a');
         
-        let filename = `${directory}/${i}.jpg"`;
+        let filename = `${directory}/${i}.jpg`;
         console.log(filename);
         image.setAttribute('src', filename);
 
@@ -43,6 +43,7 @@ function makeLightbox(directory, images) {
     var size = Object.keys(images).length;
 
     for(let i = 1; i<=size; i++) {
+        
         // create lightbox outer div
         let lightbox = document.createElement('div');
         lightbox.setAttribute('id', `lightbox-${i}`);
@@ -54,7 +55,7 @@ function makeLightbox(directory, images) {
 
         // create the image element
         let image = document.createElement('img');
-        image.setAttribute('src', `${directory}/${i}.jpg"`);
+        image.setAttribute('src', `${directory}/${i}.jpg`);
 
         // create the title div
         let title = document.createElement('div');
