@@ -26,7 +26,7 @@ export function makeGallery(directory, images) {
         console.log(filename);
         image.setAttribute('src', filename);
 
-        let href = "#lightbox-" + 'n';
+        let href = "#lightbox-" + i;
         link.setAttribute('href', href)
         container.appendChild(image);
         container.appendChild(link);
@@ -43,7 +43,7 @@ function makeLightbox(directory, images) {
     var size = Object.keys(images).length;
 
     for(let i = 1; i<=size; i++) {
-        
+
         // create lightbox outer div
         let lightbox = document.createElement('div');
         lightbox.setAttribute('id', `lightbox-${i}`);
