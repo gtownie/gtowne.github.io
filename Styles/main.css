@@ -23,10 +23,21 @@ img {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* .move-up {
     -webkit-animation: mover 1.5s ease-out;
     animation: mover 0.5s ease-out linear;
 }
+
+
 
 .move-up-linear {
     -webkit-animation: mover 1.5s linear;

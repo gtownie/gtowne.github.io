@@ -67,7 +67,6 @@ function makeLightbox(directory, images) {
         closeButton.setAttribute('href', '#gallery')
 
         // routing
-
         content.appendChild(image);
         content.appendChild(title);
         content.appendChild(closeButton);

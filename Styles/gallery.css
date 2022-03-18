@@ -16,10 +16,10 @@ body {
 
 #gallery {
   display: grid;
-  height: calc(100vh - 10px);
+  height: auto;
   grid-template: repeat(6, 1fr)/repeat(6, 1fr);
   grid-gap: 0.5em;
-  overflow: auto;
+  grid-auto-flow: dense;
 }
 
 @media (max-width: 800px) {
@@ -47,7 +47,7 @@ body {
 }
 
 #gallery > div:nth-child(2) {
-  grid-column: span 3;
+  grid-column: span 2;
   grid-row: span 3;
 }
 
@@ -74,6 +74,8 @@ body {
   width: 100%;
   min-height: 100%;
   transition: all ease 1s;
+  object-fit: cover;
+
 }
 
 #gallery > div:hover img {
@@ -88,7 +90,6 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
-  min-height: 200px;
 }
 
 #gallery div,
